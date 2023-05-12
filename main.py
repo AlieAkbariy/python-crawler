@@ -1,4 +1,4 @@
-from Crawler import Crawler
+from crawler.multithreaded_crawler import MultiThreadedCrawler
 
-c = Crawler('http://yazd.ac.ir/')
-c.start()
+multi_thread_crawler = MultiThreadedCrawler('https://yazd.ac.ir', 16, 12000, 'output.txt')
+multi_thread_crawler.start()
